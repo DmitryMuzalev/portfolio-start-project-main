@@ -10,9 +10,9 @@ type IconPropsType = {
 function Icon({ iconId, height, width, viewBox }: IconPropsType) {
   return (
     <svg
-      height={height || "100"}
-      width={width || "100"}
-      viewBox={viewBox || "0 0 500 500"}
+      height={height || "120"}
+      width={width || "120"}
+      viewBox={viewBox || "0 0 120 120"}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
