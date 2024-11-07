@@ -14,18 +14,25 @@ function Header() {
       gap="1rem"
     >
       <Logo />
-      <HeaderMenu as="nav">
-        <Link>Projects</Link>
-        <Button as="a" href="#contact">
-          Contact
-        </Button>
-      </HeaderMenu>
+      <Menu>
+        <ListLinks as="ul">
+          <li>
+            <Link>Projects</Link>
+          </li>
+          <li>
+            <Button as="a" href="#contact">
+              Contact
+            </Button>
+          </li>
+        </ListLinks>
+      </Menu>
     </FlexContainer>
   );
 }
 
-const HeaderMenu = styled(FlexContainer)`
-  gap: 2rem;
+const Menu = styled.nav``;
+const ListLinks = styled(FlexContainer)`
+  gap: 2.5rem;
 `;
 
 export { Header };
