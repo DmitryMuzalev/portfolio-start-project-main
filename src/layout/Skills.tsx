@@ -9,7 +9,7 @@ const SkillsList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7.5rem;
+  gap: 3.75rem calc((100% - 5 * 120px) / 4);
 `;
 
 const SkillsItem = styled.li`

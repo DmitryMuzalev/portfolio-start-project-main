@@ -5,14 +5,17 @@ import { Logo } from "components/Logo";
 import { Button } from "components/UI/Button";
 import { Link } from "components/UI/Link";
 
+const Wrapper = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.75rem 0;
+`;
+
 function Header() {
   return (
-    <FlexContainer
-      as="header"
-      align="center"
-      justify="space-between"
-      gap="1rem"
-    >
+    <Wrapper>
       <Logo />
       <Menu>
         <ListLinks as="ul">
@@ -26,7 +29,7 @@ function Header() {
           </li>
         </ListLinks>
       </Menu>
-    </FlexContainer>
+    </Wrapper>
   );
 }
 
