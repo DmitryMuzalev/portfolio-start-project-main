@@ -10,7 +10,7 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.75rem 0;
+  height: 100px;
 `;
 
 function Header() {

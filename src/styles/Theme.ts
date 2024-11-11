@@ -1,23 +1,24 @@
 const theme = {
   color: {
-    mainBg: "#041f31",
-    cardBg: "#222525",
+    main_bg: "#041f31",
+    card_bg: "#222525",
+    primary: "#bdebea",
+    secondary: "#d7e5ec",
     text: {
-      primary: "#bdebea",
-      secondary: "#d7e5ec",
       title: "#d9f2f2",
       placeholder: "#919B9B",
-      error: "#C05353",
+      error: "#c05353",
+      button: "#252728",
+      badge: "#1f2626",
     },
   },
 
-  gradient: "linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)",
+  gradient_90deg: "linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)",
+  gradient_0deg: "linear-gradient(0deg, #00f5a0 0%, #00d9f5 100%)",
 
-  font: {
-    family: {
-      primary: '"Montserrat", serif',
-      secondary: '"Tinos", serif',
-    },
+  font_family: {
+    primary: '"Montserrat", serif',
+    secondary: '"Tinos", serif',
   },
 };
 

@@ -13,9 +13,10 @@ const GlobalStyle = createGlobalStyle`
     
 
     body {
-       font-family: ${theme.font.family.primary};
-       background-color: ${theme.color.mainBg};
-       color: ${theme.color.text.primary};
+       font-family: ${theme.font_family.primary};
+       background-color: ${theme.color.main_bg};
+       color: ${theme.color.primary};
+       font-weight: 400;
     }
 
 
@@ -25,6 +26,11 @@ const GlobalStyle = createGlobalStyle`
     
     a {
         text-decoration: none;
+    }
+
+    p {
+        letter-spacing: 0.04em;
+        line-height: 1.5;
     }
 
     ul { 

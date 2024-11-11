@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FlexContainer } from "./UI/FlexContainer";
 import { Button } from "./UI/Button";
+import { theme } from "styles/Theme";
 
 type ProjectCardPropsType = {
   name: string;
@@ -9,16 +10,46 @@ type ProjectCardPropsType = {
   description: string;
 };
 
-const Wrapper = styled.li``;
+const Wrapper = styled.li`
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background-color: ${theme.color.card_bg};
+`;
+
 const Image = styled.img`
   max-width: 100%;
   height: 380px;
   object-fit: cover;
 `;
-const Content = styled.div``;
-const Title = styled.h3``;
-const Description = styled.p``;
-const Badge = styled(Button)``;
+
+const Content = styled.div`
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  padding: 1.75rem 0.5rem 2rem 1.5rem;
+`;
+
+const Title = styled.h3`
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: ${theme.color.text.title};
+`;
+
+const Description = styled.p`
+  margin-top: 0.5rem;
+`;
+
+const Badge = styled(Button)`
+  font-weight: 400;
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: ${theme.color.text.badge};
+`;
 
 function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
   return (
@@ -26,7 +57,7 @@ function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
       <Image src={img} alt={name} />
       <Content>
         <Title>{name}</Title>
-        <FlexContainer as="ul" gap="0.5rem">
+        <FlexContainer as="ul" gap="0.75rem" wrap="wrap">
           {tools.map((item, index) => (
             <Badge as="span" key={index}>
               {item}

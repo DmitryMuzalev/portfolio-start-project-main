@@ -1,14 +1,23 @@
 import styled from "styled-components";
-import { Icon } from "./UI/Icon";
+
+import LogoIcon from "assets/images/logo.svg";
 
 const Wrapper = styled.a.attrs(() => ({
   href: "#home",
-}))``;
+}))`
+  height: 2.75rem;
+  width: 2.75rem;
+  line-height: 0;
+
+  img {
+    max-width: 100%;
+  }
+`;
 
 function Logo() {
   return (
     <Wrapper>
-      <Icon iconId="logo" height="40" width="40" viewBox="0 0 40 40" />
+      <img src={LogoIcon} alt="Logo" />
     </Wrapper>
   );
 }
