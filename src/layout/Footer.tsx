@@ -1,9 +1,10 @@
 import { SocialLinks } from "components/SocialLinks";
-import { FlexContainer } from "components/UI/FlexContainer";
 import { Link } from "components/UI/Link";
+import { SectionWrapper } from "components/UI/SectionWrapper";
 import styled from "styled-components";
 
-const Wrapper = styled(FlexContainer)`
+const Wrapper = styled(SectionWrapper)`
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
@@ -29,10 +30,24 @@ function Footer() {
 }
 
 const Menu = styled.nav``;
-const ListLinks = styled(FlexContainer)`
-  gap: 2.5rem;
+const ListLinks = styled.ul`
+  li {
+    display: inline-block;
+  }
+
+  li:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+
+  a {
+    font-weight: 400;
+  }
 `;
 
-const Copyright = styled.span``;
+const Copyright = styled.span`
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+`;
 
 export { Footer };

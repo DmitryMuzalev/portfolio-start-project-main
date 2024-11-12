@@ -1,5 +1,17 @@
 [
-  { "name": "gmail", "url": "https://mail.google.com/" },
-  { "name": "linkedin", "url": "https://www.linkedin.com/" },
-  { "name": "github", "url": "https://github.com/" }
+  {
+    "name": "gmail",
+    "url": "https://mail.google.com/",
+    "icon": "./images/social-icons/gmail.svg"
+  },
+  {
+    "name": "linkedin",
+    "url": "https://www.linkedin.com/",
+    "icon": "./images/social-icons/linkedin.svg"
+  },
+  {
+    "name": "github",
+    "url": "https://github.com/",
+    "icon": "./images/social-icons/github.svg"
+  }
 ]

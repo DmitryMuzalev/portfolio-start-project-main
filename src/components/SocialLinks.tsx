@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FlexContainer } from "./UI/FlexContainer";
-import { Icon } from "./UI/Icon";
 
 import socialLinks from "assets/mock/links.json";
 
@@ -22,21 +21,28 @@ function SocialLinks() {
 type SocialLinkItemPropsType = {
   name: string;
   url: string;
+  icon: string;
 };
 
-function SocialLinkItem({ name, url }: SocialLinkItemPropsType) {
+function SocialLinkItem({ name, url, icon }: SocialLinkItemPropsType) {
   return (
-    <FlexContainer
-      as="a"
-      direction="column"
-      align="center"
-      href={url}
-      target="_blank"
-    >
-      <Icon iconId={name} height="38" width="38" viewBox="0 0 38 38" />
+    <SocialLinkItemStyled href={url} target="_blank">
+      <img src={icon} alt={name} />
       <span style={{ textTransform: "uppercase" }}>{name}</span>
-    </FlexContainer>
+    </SocialLinkItemStyled>
   );
 }
+
+const SocialLinkItemStyled = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    use {
+      fill: black;
+    }
+  }
+`;
 
 export { SocialLinks };
