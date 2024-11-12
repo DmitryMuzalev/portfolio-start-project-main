@@ -1,74 +1,90 @@
 import { Button } from "components/UI/Button";
-import { FlexContainer } from "components/UI/FlexContainer";
 import { SectionTitle } from "components/UI/SectionTitle";
 import { SectionWrapper } from "components/UI/SectionWrapper";
 import styled from "styled-components";
-
-const Form = styled.form`
-  max-width: 535px;
-  display: flex;
-  gap: 1rem;
-  margin: 0 auto;
-  flex-direction: column;
-`;
+import { theme } from "styles/Theme";
 
 function Contacts() {
   return (
     <SectionWrapper>
       <SectionTitle>Contacts</SectionTitle>
-      <Form>
-        <Field name="name" label="Name" placeholder="Your name" />
-        <Field
-          name="email"
-          type="email"
-          label="Email"
-          placeholder="example@domain.cpm"
-        />
-        <Message name="message" label="Message" placeholder="Hi, I will..." />
+      <Form action="#" autoComplete="off">
+        <FieldWrapper>
+          <Label htmlFor="name">Name</Label>
+          <Field id="name" type="text" placeholder="Your name" />
+        </FieldWrapper>
+        <FieldWrapper>
+          <Label htmlFor="email">Email</Label>
+          <Field id="email" type="email" placeholder="example@domain.com" />
+        </FieldWrapper>
+        <FieldWrapper>
+          <Label htmlFor="message">Message</Label>
+          <Field as="textarea" id="message" placeholder="Hi, I will..." />
+        </FieldWrapper>
         <Button type="submit">Submit</Button>
       </Form>
     </SectionWrapper>
   );
 }
 
-const Label = styled.label``;
-const Input = styled.input`
+const Form = styled.form`
   width: 100%;
+  max-width: 535px;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  flex-direction: column;
+
+  textarea {
+    min-height: 165px;
+    resize: none;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 `;
-const Textarea = styled.textarea`
+
+const Label = styled.label`
+  display: inline-block;
+  margin-bottom: 0.375rem;
+  font-size: 0.875rem;
+`;
+
+const FieldWrapper = styled.div`
+  position: relative;
+`;
+
+const Field = styled.input`
   width: 100%;
-  min-height: 165px;
-  resize: vertical;
+  padding: 1rem 1.125rem;
+  font-family: ${theme.font_family.primary};
+  font-size: 1rem;
+  font-weight: 500;
+  color: ${theme.color.primary};
+  background-color: transparent;
+  border: 1px solid ${theme.color.primary};
+  border-radius: 0.375rem;
+  transition: all.3s;
+
+  &::placeholder {
+    font-size: 0.875rem;
+    color: ${theme.color.text.placeholder};
+  }
+
+  &:focus {
+    outline: none;
+    border-color: transparent;
+    background: linear-gradient(
+        to right,
+        ${theme.color.main_bg},
+        ${theme.color.main_bg}
+      ),
+      ${theme.gradient_90deg};
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
 `;
-
-type FieldPropsType = {
-  name: string;
-  type?: string;
-  label: string;
-  placeholder: string;
-};
-
-function Field({ name, type, label, placeholder }: FieldPropsType) {
-  return (
-    <FlexContainer direction="column" gap="0.25rem">
-      <Label form={name}>{label}</Label>
-      <Input
-        id={name}
-        name={name}
-        type={type || "text"}
-        placeholder={placeholder}
-      />
-    </FlexContainer>
-  );
-}
-
-function Message({ name, label, placeholder }: Omit<FieldPropsType, "type">) {
-  return (
-    <FlexContainer direction="column" gap="0.25rem">
-      <Label form={name}>{label}</Label>
-      <Textarea id={name} name={name} placeholder={placeholder} />
-    </FlexContainer>
-  );
-}
 
 export { Contacts };

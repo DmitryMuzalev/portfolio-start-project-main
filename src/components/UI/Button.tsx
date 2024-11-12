@@ -5,8 +5,13 @@ const Button = styled.button`
   font-weight: 500;
   color: ${theme.color.text.button};
   background-image: ${theme.gradient_90deg};
-  padding: 0.75em 1.25em;
+  padding: 0.875em 1.25em;
   border-radius: 0.375em;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.85;
+  }
 `;
 
 export { Button };

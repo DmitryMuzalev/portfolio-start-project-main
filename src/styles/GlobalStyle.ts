@@ -21,7 +21,9 @@ const GlobalStyle = createGlobalStyle`
 
 
     button {
+        font-family: ${theme.font_family.primary};
         cursor: pointer;
+        border: none;
     }
     
     a {
