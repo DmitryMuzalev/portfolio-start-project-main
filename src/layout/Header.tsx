@@ -11,6 +11,10 @@ const Wrapper = styled.header`
   justify-content: space-between;
   gap: 1rem;
   height: 100px;
+
+  a {
+    flex-shrink: 0;
+  }
 `;
 
 function Header() {

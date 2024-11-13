@@ -47,12 +47,7 @@ const Arrow = styled.span`
   left: 50%;
   transform: translateX(-50%);
   line-height: 0;
-
-  svg {
-    use {
-      fill: ${theme.color.secondary};
-    }
-  }
+  color: ${theme.color.secondary};
 `;
 
 function Hero() {

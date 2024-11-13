@@ -10,6 +10,21 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    
+    *::-webkit-scrollbar {
+      width: 0.25rem;
+    }
+
+    *::-webkit-scrollbar-track {
+      background-color: ${theme.color.card_bg};
+      border-radius: 0.625rem;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-image: ${theme.gradient_0deg};
+      border-radius: 0.625rem;
+    }
     
 
     body {
@@ -17,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
        background-color: ${theme.color.main_bg};
        color: ${theme.color.primary};
        font-weight: 400;
+       font-size: 16px;
     }
 
 

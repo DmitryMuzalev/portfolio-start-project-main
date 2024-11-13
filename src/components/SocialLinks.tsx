@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FlexContainer } from "./UI/FlexContainer";
 
 import socialLinks from "assets/mock/links.json";
+import { theme } from "styles/Theme";
 
 const Wrapper = styled(FlexContainer)`
   gap: 4.5rem;
@@ -37,11 +38,13 @@ const SocialLinkItemStyled = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.625rem;
 
-  svg {
-    use {
-      fill: black;
-    }
+  span {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: ${theme.color.primary};
   }
 `;
 
