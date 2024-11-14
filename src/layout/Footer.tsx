@@ -1,44 +1,44 @@
-import { SocialLinks } from "components/SocialLinks";
-import { Link } from "components/UI/Link";
-import { SectionWrapper } from "components/UI/SectionWrapper";
 import styled from "styled-components";
 
-const Wrapper = styled(SectionWrapper)`
+import { SectionWrapper } from "components/SectionWrapper";
+import { SocialLinks } from "components/SocialLinks";
+import { Link } from "components/Link";
+
+function Footer() {
+  return (
+    <FooterStyled as="footer">
+      <SocialLinks />
+      <Menu>
+        <ListLinks as="ul">
+          <ListLinksItem>
+            <Link href="#projects">Projects</Link>
+          </ListLinksItem>
+          <ListLinksItem>
+            <Link href="#contact">Contact</Link>
+          </ListLinksItem>
+        </ListLinks>
+      </Menu>
+      <Copyright>web developer 2024</Copyright>
+    </FooterStyled>
+  );
+}
+
+const FooterStyled = styled(SectionWrapper)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
 `;
 
-function Footer() {
-  return (
-    <Wrapper as="footer">
-      <SocialLinks />
-      <Menu>
-        <ListLinks as="ul">
-          <li>
-            <Link>Projects</Link>
-          </li>
-          <li>
-            <Link>Contact</Link>
-          </li>
-        </ListLinks>
-      </Menu>
-      <Copyright>web developer 2024</Copyright>
-    </Wrapper>
-  );
-}
-
 const Menu = styled.nav``;
-const ListLinks = styled.ul`
-  li {
-    display: inline-block;
-  }
+const ListLinks = styled.ul``;
 
-  li:not(:last-child) {
+const ListLinksItem = styled.li`
+  display: inline-block;
+
+  &:not(:last-child) {
     margin-right: 2.5rem;
   }
-
   a {
     font-weight: 400;
   }

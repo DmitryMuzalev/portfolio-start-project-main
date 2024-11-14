@@ -1,6 +1,6 @@
-import { Button } from "components/UI/Button";
-import { SectionTitle } from "components/UI/SectionTitle";
-import { SectionWrapper } from "components/UI/SectionWrapper";
+import { Button } from "components/Button";
+import { SectionTitle } from "components/SectionTitle";
+import { SectionWrapper } from "components/SectionWrapper";
 import styled from "styled-components";
 import { theme } from "styles/Theme";
 
@@ -59,14 +59,14 @@ const FieldWrapper = styled.div`
 const Field = styled.input`
   width: 100%;
   padding: 1rem 1.125rem;
-  font-family: ${theme.font_family.primary};
+  font-family: ${theme.fontFamily.primary};
   font-size: 1rem;
   font-weight: 500;
   color: ${theme.color.primary};
   background-color: transparent;
   border: 1px solid ${theme.color.primary};
   border-radius: 0.375rem;
-  transition: all.3s;
+  transition: 0.3s;
 
   &::placeholder {
     font-size: 0.875rem;
@@ -78,10 +78,10 @@ const Field = styled.input`
     border-color: transparent;
     background: linear-gradient(
         to right,
-        ${theme.color.main_bg},
-        ${theme.color.main_bg}
+        ${theme.color.bg.primary},
+        ${theme.color.bg.primary}
       ),
-      ${theme.gradient_90deg};
+      ${theme.gradient.primary_90deg};
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }

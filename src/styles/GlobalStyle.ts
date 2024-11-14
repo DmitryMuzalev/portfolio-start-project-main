@@ -17,19 +17,19 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *::-webkit-scrollbar-track {
-      background-color: ${theme.color.card_bg};
+      background-color: ${theme.color.bg.secondary};
       border-radius: 0.625rem;
     }
 
     *::-webkit-scrollbar-thumb {
-      background-image: ${theme.gradient_0deg};
+      background-image: ${theme.gradient.primary_0deg};
       border-radius: 0.625rem;
     }
     
 
     body {
-       font-family: ${theme.font_family.primary};
-       background-color: ${theme.color.main_bg};
+       font-family: ${theme.fontFamily.primary};
+       background-color: ${theme.color.bg.primary};
        color: ${theme.color.primary};
        font-weight: 400;
        font-size: 16px;
@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
 
     button {
-        font-family: ${theme.font_family.primary};
+        font-family: ${theme.fontFamily.primary};
         cursor: pointer;
         border: none;
     }

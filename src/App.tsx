@@ -1,4 +1,3 @@
-import "./App.css";
 import { Container } from "layout/Container";
 import { Header } from "layout/Header";
 import { Main } from "layout/Main";

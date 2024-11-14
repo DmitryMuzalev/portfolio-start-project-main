@@ -1,15 +1,9 @@
-import { SectionTitle } from "components/UI/SectionTitle";
-import { SectionWrapper } from "components/UI/SectionWrapper";
+import { SectionTitle } from "components/SectionTitle";
+import { SectionWrapper } from "components/SectionWrapper";
 import styled from "styled-components";
 
 import projects from "assets/mock/projects.json";
 import { ProjectCard } from "components/ProjectCard";
-
-const ProjectsList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  gap: 1.75rem;
-`;
 
 function Projects() {
   return (
@@ -23,5 +17,11 @@ function Projects() {
     </SectionWrapper>
   );
 }
+
+const ProjectsList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1.75rem;
+`;
 
 export { Projects };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { FlexContainer } from "./UI/FlexContainer";
-import { Button } from "./UI/Button";
+import { FlexContainer } from "./FlexContainer";
+import { Button } from "./Button";
 import { theme } from "styles/Theme";
 
 type ProjectCardPropsType = {
@@ -10,12 +10,31 @@ type ProjectCardPropsType = {
   description: string;
 };
 
-const Wrapper = styled.li`
+function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
+  return (
+    <ProjectCardStyled>
+      <Image src={img} alt={name} />
+      <Content>
+        <Title>{name}</Title>
+        <FlexContainer as="ul" gap="0.75rem" wrap="wrap">
+          {tools.map((item, index) => (
+            <Badge as="span" key={index}>
+              {item}
+            </Badge>
+          ))}
+        </FlexContainer>
+        <Description>{description}</Description>
+      </Content>
+    </ProjectCardStyled>
+  );
+}
+
+const ProjectCardStyled = styled.li`
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border-radius: 0.375rem;
-  background-color: ${theme.color.card_bg};
+  background-color: ${theme.color.bg.secondary};
 `;
 
 const Image = styled.img`
@@ -50,24 +69,5 @@ const Badge = styled(Button)`
   text-transform: uppercase;
   color: ${theme.color.text.badge};
 `;
-
-function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
-  return (
-    <Wrapper>
-      <Image src={img} alt={name} />
-      <Content>
-        <Title>{name}</Title>
-        <FlexContainer as="ul" gap="0.75rem" wrap="wrap">
-          {tools.map((item, index) => (
-            <Badge as="span" key={index}>
-              {item}
-            </Badge>
-          ))}
-        </FlexContainer>
-        <Description>{description}</Description>
-      </Content>
-    </Wrapper>
-  );
-}
 
 export { ProjectCard };

@@ -1,9 +1,18 @@
 const theme = {
+  fontFamily: {
+    primary: '"Montserrat", serif',
+    secondary: '"Tinos", serif',
+  },
+
   color: {
-    main_bg: "#041f31",
-    card_bg: "#222525",
     primary: "#bdebea",
     secondary: "#d7e5ec",
+
+    bg: {
+      primary: "#041f31",
+      secondary: "#222525",
+    },
+
     text: {
       title: "#d9f2f2",
       placeholder: "#919B9B",
@@ -13,12 +22,9 @@ const theme = {
     },
   },
 
-  gradient_90deg: "linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)",
-  gradient_0deg: "linear-gradient(0deg, #00f5a0 0%, #00d9f5 100%)",
-
-  font_family: {
-    primary: '"Montserrat", serif',
-    secondary: '"Tinos", serif',
+  gradient: {
+    primary_0deg: "linear-gradient(0deg, #00f5a0 0%, #00d9f5 100%)",
+    primary_90deg: "linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)",
   },
 };
 

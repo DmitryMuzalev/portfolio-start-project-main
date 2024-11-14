@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import { FlexContainer } from "./UI/FlexContainer";
 
 import socialLinks from "assets/mock/links.json";
+
 import { theme } from "styles/Theme";
+
+import { FlexContainer } from "./FlexContainer";
 
 const Wrapper = styled(FlexContainer)`
   gap: 4.5rem;
