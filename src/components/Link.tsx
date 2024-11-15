@@ -9,20 +9,25 @@ const Link = styled.a.attrs<{ href?: string }>(({ href }) => ({
   font-weight: 500;
   padding: 0.25rem 0;
 
-  /*  
-    &:active {
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.125rem;
+    border-radius: 0.25rem;
+    transform: translateY(100%);
+    background-image: ${theme.gradient.primary_90deg};
+    transition: 0.3s;
+    transform: scale(0);
+  }
+
+  &:hover {
     &::before {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0.75rem;
-      border-radius: 0.25rem;
-      transform: translateY(100%);
-     // background-image: ${theme.gradient.primary_90deg};
+      transform: scale(1);
     }
-  }*/
+  }
 `;
 
 export { Link };

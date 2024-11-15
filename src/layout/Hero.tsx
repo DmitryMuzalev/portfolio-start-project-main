@@ -22,7 +22,7 @@ function Hero() {
         </Button>
       </Content>
       <Image src={Developer} alt="Developer" />
-      <Arrow>
+      <Arrow href="#down">
         <Icon
           iconId="arrow-scroll"
           width="32"
@@ -71,7 +71,7 @@ const Description = styled.p`
 `;
 const Image = styled.img``;
 
-const Arrow = styled.span`
+const Arrow = styled.a`
   cursor: pointer;
   position: absolute;
   bottom: 3.5rem;

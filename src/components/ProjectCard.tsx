@@ -68,6 +68,7 @@ const Badge = styled(Button)`
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: ${theme.color.text.badge};
+  pointer-events: none;
 `;
 
 export { ProjectCard };
