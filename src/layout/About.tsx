@@ -32,7 +32,7 @@ const Text = styled.p`
   padding-left: 1.5rem;
   &::before {
     position: absolute;
-    height: 100%;
+    height: 7.25rem;
     content: "";
     top: 0;
     left: 0;

@@ -26,6 +26,11 @@ const theme = {
     primary_0deg: "linear-gradient(0deg, #00f5a0 0%, #00d9f5 100%)",
     primary_90deg: "linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)",
   },
+
+  media: {
+    tablet: "screen and (max-width:768px)",
+    mobile: "screen and (max-width:576px)",
+  },
 };
 
 export { theme };
