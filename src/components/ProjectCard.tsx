@@ -39,9 +39,8 @@ const ProjectCardStyled = styled.li`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
-  height: 380px;
   object-fit: cover;
+  aspect-ratio: 26/19;
 `;
 
 const Content = styled.div`
