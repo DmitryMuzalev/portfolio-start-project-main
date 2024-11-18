@@ -20,7 +20,7 @@ function Projects() {
 
 const ProjectsList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
   gap: 1.75rem;
 `;
 

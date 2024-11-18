@@ -30,6 +30,7 @@ function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
 }
 
 const ProjectCardStyled = styled.li`
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;

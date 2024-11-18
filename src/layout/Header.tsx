@@ -39,6 +39,8 @@ const ListLinks = styled.ul`
   gap: 2.5rem;
 `;
 
-const ListLinksItem = styled.li``;
+const ListLinksItem = styled.li`
+  margin-right: 1rem;
+`;
 
 export { Header };
