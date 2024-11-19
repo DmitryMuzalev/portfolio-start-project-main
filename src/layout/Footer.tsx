@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { SectionWrapper } from "components/SectionWrapper";
 import { SocialLinks } from "components/SocialLinks";
 import { Link } from "components/Link";
+import { theme } from "styles/Theme";
 
 function Footer() {
   return (
@@ -28,6 +29,10 @@ const FooterStyled = styled(SectionWrapper)`
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+
+  @media ${theme.media.tablet} {
+    padding: 3rem 0;
+  }
 `;
 
 const Menu = styled.nav``;

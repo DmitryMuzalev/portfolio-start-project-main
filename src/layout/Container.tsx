@@ -7,6 +7,10 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 2.5rem;
 
+  @media ${theme.media.large} {
+    padding: 0 1.75rem;
+  }
+
   @media ${theme.media.tablet} {
     padding: 0 1rem;
   }

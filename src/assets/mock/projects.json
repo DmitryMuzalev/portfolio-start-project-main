@@ -4,27 +4,31 @@
     "name": "title project",
     "tools": ["javascript", "postgresql", "react", "redux"],
     "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    "img": "./images/projects/template-image.webp"
+    "img": "./images/projects/template-image.webp",
+    "url": "#projec1"
   },
   {
     "id": 2,
     "name": "inctagram",
     "tools": ["javascript", "react native", "redux"],
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum officia quidem repellat recusandae nobis porro sequi ab fugit!",
-    "img": "./images/projects/template-image.webp"
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum officia quidem repellat recusandae nobis porro sequi ab fugit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum",
+    "img": "./images/projects/template-image.webp",
+    "url": "#projec2"
   },
   {
     "id": 3,
     "name": "title project",
     "tools": ["javascript", "postgresql", "react", "redux"],
     "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    "img": "./images/projects/template-image.webp"
+    "img": "./images/projects/template-image.webp",
+    "url": "#projec3"
   },
   {
     "id": 4,
     "name": "inctagram",
     "tools": ["javascript", "react native", "redux"],
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum officia quidem repellat recusandae nobis porro sequi ab fugit!",
-    "img": "./images/projects/template-image.webp"
+    "img": "./images/projects/template-image.webp",
+    "url": "#projec"
   }
 ]

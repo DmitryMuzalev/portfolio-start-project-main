@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Logo } from "components/Logo";
 import { Button } from "components/Button";
 import { Link } from "components/Link";
+import { theme } from "styles/Theme";
 
 function Header() {
   return (
@@ -41,6 +42,10 @@ const ListLinks = styled.ul`
 
 const ListLinksItem = styled.li`
   margin-right: 1rem;
+
+  @media ${theme.media.mobile} {
+    margin-right: 0;
+  }
 `;
 
 export { Header };

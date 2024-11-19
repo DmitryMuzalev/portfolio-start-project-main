@@ -1,15 +1,55 @@
 [
-  "javascript",
-  "typescript",
-  "mongodb",
-  "postgrest",
-  "jest",
-  "express",
-  "nestjs",
-  "docker",
-  "react",
-  "react-native",
-  "styled-components",
-  "redux",
-  "git"
+  {
+    "logoId": "javascript",
+    "name": "javascript"
+  },
+
+  {
+    "logoId": "typescript",
+    "name": "typescript"
+  },
+  {
+    "logoId": "mongodb",
+    "name": "mongo db"
+  },
+  {
+    "logoId": "postgrest",
+    "name": "postgrestql"
+  },
+  {
+    "logoId": "jest",
+    "name": "jest"
+  },
+  {
+    "logoId": "express",
+    "name": "express js"
+  },
+  {
+    "logoId": "nestjs",
+    "name": "nest js"
+  },
+  {
+    "logoId": "docker",
+    "name": "docker"
+  },
+  {
+    "logoId": "react",
+    "name": "react js"
+  },
+  {
+    "logoId": "react-native",
+    "name": "react native"
+  },
+  {
+    "logoId": "styled-components",
+    "name": "styled components"
+  },
+  {
+    "logoId": "redux",
+    "name": "redux"
+  },
+  {
+    "logoId": "git",
+    "name": "git"
+  }
 ]

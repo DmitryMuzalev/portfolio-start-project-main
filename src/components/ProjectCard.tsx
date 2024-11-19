@@ -2,27 +2,35 @@ import styled from "styled-components";
 import { FlexContainer } from "./FlexContainer";
 import { Button } from "./Button";
 import { theme } from "styles/Theme";
+import { Link } from "./Link";
 
 type ProjectCardPropsType = {
   name: string;
   img: string;
   tools: string[];
   description: string;
+  url: string;
 };
 
-function ProjectCard({ name, img, tools, description }: ProjectCardPropsType) {
+function ProjectCard({
+  name,
+  img,
+  tools,
+  description,
+  url,
+}: ProjectCardPropsType) {
   return (
     <ProjectCardStyled>
       <Image src={img} alt={name} />
       <Content>
-        <Title>{name}</Title>
-        <FlexContainer as="ul" gap="0.75rem" wrap="wrap">
+        <Title href={url}>{name}</Title>
+        <BadgeList>
           {tools.map((item, index) => (
             <Badge as="span" key={index}>
               {item}
             </Badge>
           ))}
-        </FlexContainer>
+        </BadgeList>
         <Description>{description}</Description>
       </Content>
     </ProjectCardStyled>
@@ -48,10 +56,15 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
-  padding: 1.75rem 0.5rem 2rem 1.5rem;
+  padding: 1.5rem 0.5rem 2rem 1.5rem;
+
+  @media ${theme.media.mobile} {
+    padding: 1rem 0.5rem 1rem 1rem;
+  }
 `;
 
-const Title = styled.h3`
+const Title = styled(Link)`
+  align-self: start;
   font-weight: 600;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -60,6 +73,12 @@ const Title = styled.h3`
 
 const Description = styled.p`
   margin-top: 0.5rem;
+`;
+
+const BadgeList = styled.ul`
+  display: flex;
+  gap: 0.75rem;
+  flex: wrap;
 `;
 
 const Badge = styled(Button)`

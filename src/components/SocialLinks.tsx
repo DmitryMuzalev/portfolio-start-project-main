@@ -15,9 +15,12 @@ function SocialLinks() {
 }
 
 const SocialLinksStyled = styled.div`
+  width: 100%;
+  max-width: 450px;
   display: flex;
-  gap: 4.5rem;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
 `;
 
 export { SocialLinks };
