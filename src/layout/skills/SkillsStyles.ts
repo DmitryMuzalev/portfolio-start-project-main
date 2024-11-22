@@ -1,30 +1,7 @@
 import styled from "styled-components";
-
-import skills from "assets/mock/skills.json";
-
-import { SectionTitle } from "components/SectionTitle";
-import { SectionWrapper } from "components/SectionWrapper";
-import { Icon } from "components/Icon";
 import { theme } from "styles/Theme";
-import { fontSizeCalc } from "helpers/font-size-calc";
 
-function Skills() {
-  return (
-    <SectionWrapper>
-      <SectionTitle>Skills</SectionTitle>
-      <SkillsList>
-        {skills.map((item, index) => {
-          return (
-            <SkillsItem key={index}>
-              <Icon iconId={item.logoId} />
-              <Name>{item.name}</Name>
-            </SkillsItem>
-          );
-        })}
-      </SkillsList>
-    </SectionWrapper>
-  );
-}
+import { fontSize } from "helpers/font-size-mixin";
 
 const SkillsList = styled.ul`
   display: flex;
@@ -73,7 +50,7 @@ const SkillsItem = styled.li`
 
 const Name = styled.span`
   text-transform: uppercase;
-  ${fontSizeCalc({ Fmin: 12, Fmax: 16 })}
+  ${fontSize({ Fmin: 12, Fmax: 16 })}
 `;
 
-export { Skills };
+export const S = { SkillsList, SkillsItem, Name };

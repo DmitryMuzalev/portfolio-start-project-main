@@ -1,13 +1,8 @@
 import sprite from "assets/images/sprite.svg";
 
-type IconPropsType = {
-  iconId: string;
-  height?: string;
-  width?: string;
-  viewBox?: string;
-};
+import { IconType } from "types";
 
-function Icon({ iconId, height, width, viewBox }: IconPropsType) {
+function Icon({ iconId, height, width, viewBox }: IconType) {
   return (
     <svg
       height={height || "120"}

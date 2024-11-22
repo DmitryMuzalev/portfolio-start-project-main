@@ -1,43 +1,9 @@
+import { Button } from "components/button/Button";
+import { Link } from "components/link/Link";
 import styled from "styled-components";
-import { FlexContainer } from "./FlexContainer";
-import { Button } from "./Button";
 import { theme } from "styles/Theme";
-import { Link } from "./Link";
 
-type ProjectCardPropsType = {
-  name: string;
-  img: string;
-  tools: string[];
-  description: string;
-  url: string;
-};
-
-function ProjectCard({
-  name,
-  img,
-  tools,
-  description,
-  url,
-}: ProjectCardPropsType) {
-  return (
-    <ProjectCardStyled>
-      <Image src={img} alt={name} />
-      <Content>
-        <Title href={url}>{name}</Title>
-        <BadgeList>
-          {tools.map((item, index) => (
-            <Badge as="span" key={index}>
-              {item}
-            </Badge>
-          ))}
-        </BadgeList>
-        <Description>{description}</Description>
-      </Content>
-    </ProjectCardStyled>
-  );
-}
-
-const ProjectCardStyled = styled.li`
+const ProjectCardWrapper = styled.li`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -78,7 +44,7 @@ const Description = styled.p`
 const BadgeList = styled.ul`
   display: flex;
   gap: 0.75rem;
-  flex: wrap;
+  flex-wrap: wrap;
 `;
 
 const Badge = styled(Button)`
@@ -90,4 +56,12 @@ const Badge = styled(Button)`
   pointer-events: none;
 `;
 
-export { ProjectCard };
+export const S = {
+  ProjectCardWrapper,
+  Image,
+  Content,
+  Title,
+  Description,
+  BadgeList,
+  Badge,
+};

@@ -8,6 +8,7 @@ const Button = styled.button`
   padding: 0.875em 1.25em;
   border-radius: 0.375em;
   transition: all 0.3s;
+  text-transform: capitalize;
 
   &:hover {
     opacity: 0.85;

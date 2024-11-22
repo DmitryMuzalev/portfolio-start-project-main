@@ -1,7 +1,7 @@
-import { Container } from "layout/Container";
-import { Header } from "layout/Header";
-import { Main } from "layout/Main";
-import { Footer } from "layout/Footer";
+import { Container } from "layout/container/Container";
+import { Header } from "layout/header/Header";
+import { Main } from "layout/main/Main";
+import { Footer } from "layout/footer/Footer";
 
 function App() {
   return (

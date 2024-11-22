@@ -1,46 +1,16 @@
-import { Button } from "components/Button";
 import styled from "styled-components";
 
-import Developer from "assets/images/developer_dark.svg";
-import { Icon } from "components/Icon";
 import { theme } from "styles/Theme";
-import { fontSizeCalc } from "helpers/font-size-calc";
 
-function Hero() {
-  return (
-    <HeroStyled>
-      <Content>
-        <Title>web developer</Title>
-        <Name>John Doe</Name>
-        <Description>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt.
-        </Description>
-        <Button as="a" href="#contact">
-          Contact Me
-        </Button>
-      </Content>
-      <Image src={Developer} alt="Developer" />
-      <Arrow href="#down">
-        <Icon
-          iconId="arrow-scroll"
-          width="32"
-          height="32"
-          viewBox="0 0 32 32"
-        />
-      </Arrow>
-    </HeroStyled>
-  );
-}
+import { fontSize } from "helpers/font-size-mixin";
 
-const HeroStyled = styled.section`
+const HeroWrapper = styled.section`
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
   min-height: calc(100vh - 100px);
 
   @media ${theme.media.tablet} {
@@ -62,7 +32,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h1`
-  ${fontSizeCalc({ Fmin: 16, Fmax: 20 })}
+  ${fontSize({ Fmin: 16, Fmax: 20 })}
   font-weight: 400;
   text-transform: uppercase;
   font-family: ${theme.fontFamily.secondary};
@@ -70,7 +40,7 @@ const Title = styled.h1`
 `;
 
 const Name = styled.span`
-  ${fontSizeCalc({ Fmin: 40, Fmax: 72 })}
+  ${fontSize({ Fmin: 40, Fmax: 72 })}
   font-weight: 600;
   background-image: ${theme.gradient.primary_90deg};
   background-clip: text;
@@ -106,4 +76,12 @@ const Arrow = styled.a`
   }
 `;
 
-export { Hero };
+export const S = {
+  HeroWrapper,
+  Content,
+  Title,
+  Name,
+  Description,
+  Image,
+  Arrow,
+};

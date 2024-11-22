@@ -1,21 +1,5 @@
 import styled from "styled-components";
-
 import { theme } from "styles/Theme";
-
-type SocialLinkItemPropsType = {
-  name: string;
-  url: string;
-  icon: string;
-};
-
-function SocialLinkItem({ name, url, icon }: SocialLinkItemPropsType) {
-  return (
-    <SocialLinkItemStyled href={url} target="_blank">
-      <Icon src={icon} alt={name} />
-      <Text>{name}</Text>
-    </SocialLinkItemStyled>
-  );
-}
 
 const Icon = styled.img`
   transition: 0.3s;
@@ -28,7 +12,7 @@ const Text = styled.span`
   color: ${theme.color.primary};
 `;
 
-const SocialLinkItemStyled = styled.a`
+const SocialItemWrapper = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,4 +25,4 @@ const SocialLinkItemStyled = styled.a`
   }
 `;
 
-export { SocialLinkItem };
+export const S = { SocialItemWrapper, Icon, Text };

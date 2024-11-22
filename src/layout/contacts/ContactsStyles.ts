@@ -1,31 +1,5 @@
-import { Button } from "components/Button";
-import { SectionTitle } from "components/SectionTitle";
-import { SectionWrapper } from "components/SectionWrapper";
 import styled from "styled-components";
 import { theme } from "styles/Theme";
-
-function Contacts() {
-  return (
-    <SectionWrapper>
-      <SectionTitle>Contacts</SectionTitle>
-      <Form action="#" autoComplete="off">
-        <FieldWrapper>
-          <Label htmlFor="name">Name</Label>
-          <Field id="name" type="text" placeholder="Your name" />
-        </FieldWrapper>
-        <FieldWrapper>
-          <Label htmlFor="email">Email</Label>
-          <Field id="email" type="email" placeholder="example@domain.com" />
-        </FieldWrapper>
-        <FieldWrapper>
-          <Label htmlFor="message">Message</Label>
-          <Field as="textarea" id="message" placeholder="Hi, I will..." />
-        </FieldWrapper>
-        <Button type="submit">Submit</Button>
-      </Form>
-    </SectionWrapper>
-  );
-}
 
 const Form = styled.form`
   width: 100%;
@@ -87,4 +61,4 @@ const Field = styled.input`
   }
 `;
 
-export { Contacts };
+export const S = { Form, Label, FieldWrapper, Field };

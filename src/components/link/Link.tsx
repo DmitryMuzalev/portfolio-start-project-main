@@ -8,6 +8,7 @@ const Link = styled.a.attrs<{ href?: string }>(({ href }) => ({
   color: inherit;
   font-weight: 500;
   padding: 0.25rem 0;
+  text-transform: capitalize;
 
   &::before {
     position: absolute;
