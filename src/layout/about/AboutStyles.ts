@@ -1,6 +1,19 @@
 import styled from "styled-components";
 import { theme } from "styles/Theme";
 
+import { SectionWrapper } from "components/section/SectionWrapper";
+
+const AboutWrapper = styled(SectionWrapper)`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 388px;
+
+  @media ${theme.media.tablet} {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+`;
 const Content = styled.div`
   width: 100%;
   max-width: 845px;
@@ -21,4 +34,4 @@ const Text = styled.p`
   }
 `;
 
-export const S = { Content, Text };
+export const S = { AboutWrapper, Content, Text };

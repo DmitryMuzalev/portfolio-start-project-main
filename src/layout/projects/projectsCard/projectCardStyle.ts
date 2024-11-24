@@ -14,7 +14,11 @@ const ProjectCardWrapper = styled.li`
 
 const Image = styled.img`
   object-fit: cover;
-  aspect-ratio: 26/19;
+  aspect-ratio: 26/19.3;
+
+  @media ${theme.media.mobile} {
+    aspect-ratio: 11/9;
+  }
 `;
 
 const Content = styled.div`

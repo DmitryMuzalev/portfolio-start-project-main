@@ -32,6 +32,7 @@ const SkillsItem = styled.li`
   text-align: center;
 
   @media ${theme.media.large} {
+    row-gap: 1rem;
     width: 105px;
     svg {
       width: 105px;
@@ -40,10 +41,11 @@ const SkillsItem = styled.li`
   }
 
   @media ${theme.media.tablet} {
-    width: 90px;
+    row-gap: 0.875rem;
+    width: 88px;
     svg {
-      width: 90px;
-      height: 90px;
+      width: 88px;
+      height: 88px;
     }
   }
 `;

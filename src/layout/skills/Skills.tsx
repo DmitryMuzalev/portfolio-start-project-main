@@ -1,6 +1,6 @@
 import { S } from "./SkillsStyles";
 
-import skills from "assets/mock/skills.json";
+import skills from "assets/data/skills.json";
 
 import { SectionTitle } from "components/section/SectionTitle";
 import { SectionWrapper } from "components/section/SectionWrapper";

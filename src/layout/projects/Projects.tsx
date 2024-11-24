@@ -1,6 +1,6 @@
 import { S } from "./ProjectsStyles";
 
-import projects from "assets/mock/projects.json";
+import projects from "assets/data/projects.json";
 
 import { SectionTitle } from "components/section/SectionTitle";
 import { SectionWrapper } from "components/section/SectionWrapper";

@@ -1,4 +1,4 @@
-import socialLinks from "assets/mock/links.json";
+import socialLinks from "assets/data/links.json";
 import { SocialItem } from "./socialItem/SocialItem";
 
 import { S } from "./SocialLinksStyles";

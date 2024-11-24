@@ -13,13 +13,13 @@ const menuItems: MenuItemsType[] = [
 
 function Footer() {
   return (
-    <S.FooterStyled as="footer">
+    <S.FooterWrapper as="footer">
       <SocialLinks />
       <S.FooterMenu>
         <Menu items={menuItems} />
       </S.FooterMenu>
       <S.Copyright>web developer 2024</S.Copyright>
-    </S.FooterStyled>
+    </S.FooterWrapper>
   );
 }
 

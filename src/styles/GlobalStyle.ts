@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
-
     
     *::-webkit-scrollbar {
       width: 0.25rem;
@@ -26,6 +25,12 @@ const GlobalStyle = createGlobalStyle`
       border-radius: 0.625rem;
     }
     
+
+    ::selection {
+        -webkit-text-fill-color:  ${theme.color.bg.primary};
+        color:  ${theme.color.bg.primary};
+        background-color:  ${theme.color.primary};
+    }
 
     body {
        font-family: ${theme.fontFamily.primary};

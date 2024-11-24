@@ -1,11 +1,10 @@
 import { S } from "./AboutStyles";
 
 import { SectionTitle } from "components/section/SectionTitle";
-import { SectionWrapper } from "components/section/SectionWrapper";
 
 function About() {
   return (
-    <SectionWrapper>
+    <S.AboutWrapper>
       <SectionTitle>About me</SectionTitle>
       <S.Content>
         <S.Text>
@@ -17,7 +16,7 @@ function About() {
           Neolithic period, representing at least nine or ten individuals.
         </S.Text>
       </S.Content>
-    </SectionWrapper>
+    </S.AboutWrapper>
   );
 }
 

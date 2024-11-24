@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { theme } from "styles/Theme";
 
+import { Button } from "components/button/Button";
+
 const Form = styled.form`
   width: 100%;
   max-width: 535px;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0 auto;
   flex-direction: column;
 
@@ -14,14 +16,14 @@ const Form = styled.form`
     resize: none;
   }
 
-  button {
+  ${Button} {
     font-size: 1rem;
     font-weight: 500;
   }
 `;
 
 const Label = styled.label`
-  display: inline-block;
+  display: inline-block;еуд
   margin-bottom: 0.375rem;
   font-size: 0.875rem;
 `;

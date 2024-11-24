@@ -15,6 +15,7 @@ const HeroWrapper = styled.section`
 
   @media ${theme.media.tablet} {
     grid-template-columns: 1fr;
+    gap: 4rem;
   }
 `;
 
@@ -50,6 +51,10 @@ const Name = styled.span`
 
 const Description = styled.p`
   margin-bottom: 1.25rem;
+
+  @media ${theme.media.mobile} {
+    margin-bottom: 0.25rem;
+  }
 `;
 
 const Image = styled.img`
@@ -71,6 +76,7 @@ const Arrow = styled.a`
   line-height: 0;
   color: ${theme.color.secondary};
 
+  // @media ((max-width: 992px) and (orientation: landscape)), (max-width: 768px)
   @media ${theme.media.tablet} {
     display: none;
   }
