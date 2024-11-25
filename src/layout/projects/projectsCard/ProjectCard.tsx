@@ -1,4 +1,4 @@
-import { S } from "./projectCardStyle";
+import { S } from "./ProjectCardStyles";
 
 import { ProjectCardType } from "types";
 

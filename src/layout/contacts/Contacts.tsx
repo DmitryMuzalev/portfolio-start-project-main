@@ -3,12 +3,10 @@ import { S } from "./ContactsStyles";
 import { Button } from "components/button/Button";
 import { SectionTitle } from "components/section/SectionTitle";
 import { SectionWrapper } from "components/section/SectionWrapper";
-import styled from "styled-components";
-import { theme } from "styles/Theme";
 
 function Contacts() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="contacts">
       <SectionTitle>Contacts</SectionTitle>
       <S.Form action="#" autoComplete="off">
         <S.FieldWrapper>

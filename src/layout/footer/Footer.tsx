@@ -8,7 +8,7 @@ import { S } from "./FooterStyles";
 
 const menuItems: MenuItemsType[] = [
   { name: "projects", type: "link" },
-  { name: "contact", type: "link" },
+  { name: "contacts", type: "link" },
 ];
 
 function Footer() {

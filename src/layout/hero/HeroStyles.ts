@@ -53,7 +53,7 @@ const Description = styled.p`
   margin-bottom: 1.25rem;
 
   @media ${theme.media.mobile} {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
   }
 `;
 
@@ -75,6 +75,9 @@ const Arrow = styled.a`
   transform: translateX(-50%);
   line-height: 0;
   color: ${theme.color.secondary};
+
+  -webkit-animation: up-down 1s infinite alternate;
+  animation: up-down 1s infinite alternate;
 
   // @media ((max-width: 992px) and (orientation: landscape)), (max-width: 768px)
   @media ${theme.media.tablet} {

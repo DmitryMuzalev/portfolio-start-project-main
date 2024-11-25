@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { theme } from "styles/Theme";
 
-const Link = styled.a.attrs<{ href?: string }>(({ href }) => ({
-  href: href || "#link",
-}))`
+const Link = styled.a`
   position: relative;
   color: inherit;
   font-weight: 500;

@@ -4,7 +4,7 @@ import { SectionTitle } from "components/section/SectionTitle";
 
 function About() {
   return (
-    <S.AboutWrapper>
+    <S.AboutWrapper id="about">
       <SectionTitle>About me</SectionTitle>
       <S.Content>
         <S.Text>

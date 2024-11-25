@@ -8,7 +8,7 @@ import { ProjectCard } from "./projectsCard/ProjectCard";
 
 function Projects() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="projects">
       <SectionTitle>Projects</SectionTitle>
       <S.ProjectsList>
         {projects.map((item) => (

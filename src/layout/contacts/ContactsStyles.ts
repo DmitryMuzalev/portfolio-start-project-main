@@ -23,7 +23,7 @@ const Form = styled.form`
 `;
 
 const Label = styled.label`
-  display: inline-block;еуд
+  display: inline-block;
   margin-bottom: 0.375rem;
   font-size: 0.875rem;
 `;

@@ -14,6 +14,7 @@ const AboutWrapper = styled(SectionWrapper)`
     justify-content: flex-start;
   }
 `;
+
 const Content = styled.div`
   width: 100%;
   max-width: 845px;
@@ -22,6 +23,7 @@ const Content = styled.div`
 const Text = styled.p`
   position: relative;
   padding-left: 1.5rem;
+
   &::before {
     position: absolute;
     height: 7.25rem;

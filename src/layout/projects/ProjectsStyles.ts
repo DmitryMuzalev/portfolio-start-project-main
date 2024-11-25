@@ -7,8 +7,8 @@ const ProjectsList = styled.ul`
   gap: 1.75rem;
 
   @media ${theme.media.mobile} {
-    grid-template-columns: 1fr;
     gap: 1rem;
+    grid-template-columns: 1fr;
   }
 `;
 

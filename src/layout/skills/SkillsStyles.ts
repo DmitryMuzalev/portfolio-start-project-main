@@ -14,7 +14,7 @@ const SkillsList = styled.ul`
   }
 
   @media ${theme.media.tablet} {
-    gap: 3rem calc((100% - 5 * 90px) / 4);
+    gap: 3rem calc((100% - 5 * 88px) / 4);
   }
 
   @media ${theme.media.mobile} {

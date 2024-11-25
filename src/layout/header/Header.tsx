@@ -7,7 +7,7 @@ import { Menu } from "components/menu/Menu";
 
 const menuItems: MenuItemsType[] = [
   { name: "projects", type: "link" },
-  { name: "contact", type: "button" },
+  { name: "contacts", type: "button" },
 ];
 
 function Header() {

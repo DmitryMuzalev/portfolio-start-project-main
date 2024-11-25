@@ -16,12 +16,12 @@ function Hero() {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt.
         </S.Description>
-        <Button as="a" href="#contact">
+        <Button as="a" href="#contacts">
           Contact Me
         </Button>
       </S.Content>
       <S.Image src={Developer} alt="Developer" />
-      <S.Arrow href="#down">
+      <S.Arrow href="#about">
         <Icon
           iconId="arrow-scroll"
           width="32"

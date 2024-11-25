@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
         background-color:  ${theme.color.primary};
     }
 
+    html {
+         scroll-behavior: smooth;
+    }
+
     body {
        font-family: ${theme.fontFamily.primary};
        background-color: ${theme.color.bg.primary};
@@ -59,6 +63,19 @@ const GlobalStyle = createGlobalStyle`
     ul { 
         list-style: none;
     }
+
+
+
+    @-webkit-keyframes up-down {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    
+    @keyframes up-down {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+
 `;
 
 export { GlobalStyle };
