@@ -1,3 +1,4 @@
+import { ProjectCardImage } from "./ProjectCardImage";
 import { S } from "./ProjectCardStyles";
 
 import { ProjectCardType } from "types";
@@ -5,7 +6,7 @@ import { ProjectCardType } from "types";
 function ProjectCard({ name, img, tools, description, url }: ProjectCardType) {
   return (
     <S.ProjectCardWrapper>
-      <S.Image src={img} alt={name} />
+      <ProjectCardImage name={name} img={img} />
       <S.Content>
         <S.Title href={url}>{name}</S.Title>
         <S.BadgeList>

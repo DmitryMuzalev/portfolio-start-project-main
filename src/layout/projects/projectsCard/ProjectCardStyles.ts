@@ -12,12 +12,17 @@ const ProjectCardWrapper = styled.li`
   background-color: ${theme.color.bg.secondary};
 `;
 
-const Image = styled.img`
-  object-fit: cover;
-  aspect-ratio: 26/19.3;
+const ProjectCardImageWrapper = styled.picture`
+  img {
+    object-fit: cover;
+    aspect-ratio: 26/19.3;
+    max-width: 100%;
+  }
 
   @media ${theme.media.mobile} {
-    aspect-ratio: 11/9;
+    img {
+      aspect-ratio: 11/9;
+    }
   }
 `;
 
@@ -62,7 +67,7 @@ const Badge = styled(Button)`
 
 export const S = {
   ProjectCardWrapper,
-  Image,
+  ProjectCardImageWrapper,
   Content,
   Title,
   Description,

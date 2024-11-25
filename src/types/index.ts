@@ -11,10 +11,21 @@ export type SocialItemType = {
 
 export type ProjectCardType = {
   name: string;
-  img: string;
+  img: ImageType;
   tools: string[];
   description: string;
   url: string;
+};
+
+export type ImageType = {
+  jpeg: {
+    x1: string;
+    x2: string;
+  };
+  webp: {
+    x1: string;
+    x2: string;
+  };
 };
 
 export type IconType = {

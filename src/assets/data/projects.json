@@ -4,7 +4,16 @@
     "name": "title project",
     "tools": ["javascript", "postgresql", "react", "redux"],
     "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    "img": "./images/projects/template-image.webp",
+    "img": {
+      "jpeg": {
+        "x1": "./images/projects/template-image@1x.jpg",
+        "x2": "./images/projects/template-image@2x.jpg"
+      },
+      "webp": {
+        "x1": "./images/projects/template-image@1x.webp",
+        "x2": "./images/projects/template-image@2x.webp"
+      }
+    },
     "url": "#projec1"
   },
   {
@@ -12,7 +21,16 @@
     "name": "inctagram",
     "tools": ["javascript", "react native", "redux"],
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum officia quidem repellat recusandae nobis porro sequi ab fugit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum",
-    "img": "./images/projects/template-image.webp",
+    "img": {
+      "jpeg": {
+        "x1": "./images/projects/template-image@1x.jpg",
+        "x2": "./images/projects/template-image@2x.jpg"
+      },
+      "webp": {
+        "x1": "./images/projects/template-image@1x.webp",
+        "x2": "./images/projects/template-image@2x.webp"
+      }
+    },
     "url": "#projec2"
   },
   {
@@ -20,7 +38,16 @@
     "name": "title project",
     "tools": ["javascript", "postgresql", "react", "redux"],
     "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    "img": "./images/projects/template-image.webp",
+    "img": {
+      "jpeg": {
+        "x1": "./images/projects/template-image@1x.jpg",
+        "x2": "./images/projects/template-image@2x.jpg"
+      },
+      "webp": {
+        "x1": "./images/projects/template-image@1x.webp",
+        "x2": "./images/projects/template-image@2x.webp"
+      }
+    },
     "url": "#projec3"
   },
   {
@@ -28,7 +55,16 @@
     "name": "inctagram",
     "tools": ["javascript", "react native", "redux"],
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quaerat dolorem cum, laborum officia quidem repellat recusandae nobis porro sequi ab fugit!",
-    "img": "./images/projects/template-image.webp",
+    "img": {
+      "jpeg": {
+        "x1": "./images/projects/template-image@1x.jpg",
+        "x2": "./images/projects/template-image@2x.jpg"
+      },
+      "webp": {
+        "x1": "./images/projects/template-image@1x.webp",
+        "x2": "./images/projects/template-image@2x.webp"
+      }
+    },
     "url": "#projec"
   }
 ]
