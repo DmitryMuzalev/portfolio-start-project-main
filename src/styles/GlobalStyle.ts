@@ -16,11 +16,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *::-webkit-scrollbar-track {
-      background-color: ${theme.color.bg.secondary};
+      cursor: default; 
+      background-color: transparent;
       border-radius: 0.625rem;
     }
 
     *::-webkit-scrollbar-thumb {
+      cursor: default; 
       background-image: ${theme.gradient.primary_0deg};
       border-radius: 0.625rem;
     }
