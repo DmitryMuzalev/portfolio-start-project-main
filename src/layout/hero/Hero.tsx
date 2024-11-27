@@ -21,7 +21,7 @@ function Hero() {
         </Button>
       </S.Content>
       <S.Image src={Developer} alt="Developer" />
-      <S.Arrow href="#about">
+      <S.Arrow href="#about" aria-label="Go to About section">
         <Icon
           iconId="arrow-scroll"
           width="32"
