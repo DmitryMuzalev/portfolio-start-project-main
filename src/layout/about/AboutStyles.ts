@@ -9,7 +9,7 @@ const AboutWrapper = styled(SectionWrapper)`
   justify-content: flex-end;
   min-height: 388px;
 
-  @media ${theme.media.tablet} {
+  @media ${theme.media.tablet_or_landscape} {
     min-height: auto;
     justify-content: flex-start;
   }

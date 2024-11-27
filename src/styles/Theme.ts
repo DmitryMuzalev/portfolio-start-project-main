@@ -30,6 +30,8 @@ const theme = {
   media: {
     large: "screen and (max-width:992px)",
     tablet: "screen and (max-width:768px)",
+    tablet_or_landscape:
+      "screen and ((max-width: 768px) or ((orientation: landscape) and (max-height: 580px)))",
     mobile: "screen and (max-width:576px)",
   },
 };

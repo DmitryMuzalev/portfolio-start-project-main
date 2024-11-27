@@ -10,11 +10,12 @@ const HeroWrapper = styled.section`
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
   min-height: calc(100vh - 100px);
 
   @media ${theme.media.tablet} {
     grid-template-columns: 1fr;
+    padding: 2rem 0;
     gap: 4rem;
   }
 `;
@@ -70,17 +71,15 @@ const Image = styled.img`
 const Arrow = styled.a`
   cursor: pointer;
   position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 1.5rem;
+  left: calc(50% - 1rem);
   line-height: 0;
   color: ${theme.color.secondary};
 
   -webkit-animation: up-down 1s infinite alternate;
   animation: up-down 1s infinite alternate;
 
-  // @media ((max-width: 992px) and (orientation: landscape)), (max-width: 768px)
-  @media ${theme.media.tablet} {
+  @media ${theme.media.tablet_or_landscape} {
     display: none;
   }
 `;
